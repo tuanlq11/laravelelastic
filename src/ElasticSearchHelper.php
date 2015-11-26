@@ -4,9 +4,9 @@ namespace tuanlq11\laravelelastic;
 use Elasticsearch\Client;
 use Elasticsearch\ClientBuilder;
 
-class ElasticSearch
+class ElasticSearchHelper
 {
-    /** @var  ElasticSearch */
+    /** @var  ElasticSearchHelper */
     protected static $instance;
     /** @var  Client */
     protected $client;
@@ -23,13 +23,13 @@ class ElasticSearch
     }
 
     /**
-     * @return ElasticSearch
+     * @return ElasticSearchHelper
      */
     public static function getInstance()
     {
         if (is_null(self::$instance)) {
             $connection = \Config::get('laravelelastic.connection');
-            self::$instance = new ElasticSearch($connection);
+            self::$instance = new ElasticSearchHelper($connection);
         }
 
         return self::$instance;
