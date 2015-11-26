@@ -1,0 +1,22 @@
+{
+  "name": "tuanlq11/laravelelastic",
+  "description": "Elastic helper for laravel",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Le Quoc Tuan",
+      "email": "tuanlq.it@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "elasticsearch/elasticsearch": "2.0.*",
+    "laravel/framework": "5.1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "tuanlq11\\laravelelastic\\": "src/"
+    }
+  }
+}
