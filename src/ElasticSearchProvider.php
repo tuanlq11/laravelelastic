@@ -21,6 +21,6 @@ class ElasticSearchProvider extends ServiceProvider
      */
     public function boot()
     {
-        $elasticsearch = ElasticSearch::getInstance();
+        $elasticsearch = ElasticSearchHelper::getInstance();
     }
 }
