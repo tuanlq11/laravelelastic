@@ -42,4 +42,12 @@ class ElasticSearchHelper
     {
         return $this->client;
     }
+
+    /**
+     * @return Client
+     */
+    public static function client()
+    {
+        return self::$instance->getClient();
+    }
 }
